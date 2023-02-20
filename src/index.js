@@ -36,3 +36,12 @@ User = __decorate([
     })
 ], User);
 exports.User = User;
+// below code can work.
+// @Entity({
+//   name: "user",
+//   primaryKey: {
+//     partitionKey: "USER@{{user_id}}",
+//     sortKey: "USER@{{user_id}}",
+//   },
+// })
+// export class User extends Mixin(T) {}
